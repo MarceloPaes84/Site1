@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Personal Portfolio Website using HTML and CSS | Codehal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body_contato">
+    
+    <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+          <li><a href="index.html">Menu</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="portifolio.html">Portifólio</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <ul>
+          <li><a class="logo" href="#">Logo</a></li>
+          <li class="hideOnMobile"><a href="index.html">Menu</a></li>
+          <li class="hideOnMobile"><a href="servicos.html">Serviços</a></li>
+          <li class="hideOnMobile"><a href="portifolio.html">Portifólio</a></li>
+          <li class="hideOnMobile"><a href="contato.html">Contato</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+    
+
+
+    <section class="contato0">
+        <div class="contato1">
+            <span class="icon_contato"><i class="fa-solid fa-location-pin"></i><h1 class="tema">LOCALIZAÇÃO</h1></span>
+            <h4 class="endereco">Rua Esperança, 1000 - Bairro:A</h4>
+            <span class=icon_contato><i class="fa-solid fa-phone"></i><h1 class="tema">TELEFONE</h1></span>
+            <h4 class="telefone">(92) 9999-9999</h4>
+            <span class=icon_contato><i class="fa fa-envelope"></i></i><h1 class="tema">EMAIL</h1></span>
+            <h4 class="email">logo@logo.com.br</h4>
+        
+            <div class="icons">
+            <a  href="#"> <i class="fa-brands fa-linkedin" style="color:#ffffff"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook" style="color:#ffffff"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram" style="color:#ffffff"></i></a>
+
+        </div>    
+        </div>
+    </section>
+
+    <script>
+        function showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+        }
+      </script>
+
+</body>
+
+</html>
